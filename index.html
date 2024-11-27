@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ArtHistory</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>ART HISTORY</h1>
-    <p>hiii i m starting</p>
+    <header>
+        <nav>
+            <div class="logo">ART HISTORY BLOG</div>
+            <ul>
+                <li><a href="#home" class="navbar">Home</a></li>
+                <li><a href="#featured-products" class="navbar" >Blog</a></li>
+                <li><a href="#hero" class="navbar">About</a></li>
+                <li><a href="#" class="navbar">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <video autoplay loop muted playsinline>
+                <source src="logo.mp4" type="video/mp4">
+              </video>
+            <h1>Welcome to Art History</h1>
+            <p>Discover the famous Art History Blog</p>
+            <a href="#featured-products" class="cta-button">Blog</a>
+        </section>
+
+        <section id="featured-products">
+            <h2>Famous Blogs</h2>
+            <div class="scroll-container">
+                <button class="scroll-button left">&larr;</button>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="1.png" height="200px" width="300px" alt="Product 1">
+                        <h3>Mona Lisa<br><br></h3>
+                        <p>Da Vinci, Leonardo</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="./product-img/product2.avif" height="200px" width="300px" alt="Product 2">
+                        <h3>Girl With A Pearl Earring<br><br></h3>
+                        <p>Vermeer, Jan</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="2.png" height="200px" width="300px" alt="Product 3">
+                        <h3>The Artists Sister at a Window, 1869</h3><br>
+                        <p>Morisot, Berthe</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="3.png" height="200px" width="300px" alt="Product 4">
+                        <h3>Portrait of a Young Man</h3><br>
+                        <p>Bronzino, Agnolo</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="4.png" height="200px" width="300px" alt="Product 5">
+                        <h3>The Holy Family</h3><br>
+                        <p>Romano, Giulio</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="./product-img/product6.avif" height="200px" width="300px" alt="Product 6">
+                        <h3>Ahab Pierced By An Arrow<br><br></h3>
+                        <p>Tissot, James</p>
+                        <a href="#contact" class="shbutton">BLOG</a>
+                    </div>
+                </div>
+                <button class="scroll-button right">&rarr;</button>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section" id="about">
+                <h4>About Us</h4>
+                <p>Discover the famous Art History Blog.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#featured-products">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section" id="contact">
+                <h4>Contact Us</h4>
+                <p>Email: arthistoryblog@gmail.com</p>
+                <p>Phone: +91 990099009900</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 1990 Art History Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
