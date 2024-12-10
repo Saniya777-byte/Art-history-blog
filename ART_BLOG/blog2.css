@@ -1,0 +1,131 @@
+header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #060202;
+    padding: 10px 20px;
+    color: white;
+  }
+  h1 {
+    margin: 0;
+    font-size: 44px;
+    flex-grow: 1; 
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  h1:hover {
+      transform: scale(1.1);   
+      color: #ff6347; 
+    }
+    .logo a{
+        text-decoration: none;
+        color: white;
+    }
+
+  nav {
+    display: flex; 
+  }
+  
+  nav ul {
+    display: flex; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px; 
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  nav ul li a:hover {
+    color:yellow; 
+  }
+
+
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #1c1c1c;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url("blog2.webp") no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    display: inline-block;
+    text-decoration: none;
+    color: #1c1c1c;
+    background: #f4d03f;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.hero .cta:hover {
+    background: #d4ac0d;
+}
+
+/* Artist Grid Section */
+.artist-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+}
+
+.artist-card {
+    background: #2c2c2c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.artist-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.artist-card .info {
+    padding: 15px;
+    text-align: center;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
